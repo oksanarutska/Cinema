@@ -1,0 +1,14 @@
+$font-family: 'Pacifico', cursive
+$font-family_Hanalei: 'Hanalei', cursive
+
+$color_gray: gray
+$color_purple: #debbf6
+$color_purple__dark: #a54b8c
+$color_red: firebrick
+$color_white: white
+$color_pink: #f4607e
+$color_brown: #dab284b5
+$color_blue: blue
+$color_green: green
+
+

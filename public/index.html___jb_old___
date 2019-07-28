@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hanalei|Pacifico&display=swap" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" rel="stylesheet">
+
+  <title>Title</title>
+</head>
+<body class="wrapper_body">
+<header>
+  <div class=" wrapper_header">
+    <div class="wrapper header">
+      <div class="wrapper_logo">
+        <img alt="" class="logo" src="img/logo_fox.gif">
+        <a href="/" class="logo_text">Running Fox</a>
+      </div>
+      <div>
+        <select class="wrapper_select">
+          <option>Київ</option>
+          <option>Львів</option>
+          <option>Одеса</option>
+        </select>
+      </div>
+      <div>
+        <a href="/" class="button_registration">
+          реєстрація
+        </a>
+        <a href="/" class="button_registration comein">
+          увійти
+        </a>
+
+      </div>
+      <div>
+        <a href="/">
+          <img class="header_goods" src="img/goods.png">
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="wrapper wrapper_menu">
+    <a href="/">Мультфільми</a>
+    <a href="/">Розклад</a>
+    <a href="/">4DX</a>
+    <a href="/">IMAX</a>
+    <a href="/">Клуб</a>
+  </div>
+
+</header>
+
+<main>
+  <div class="wrapper">
+    <h1 class="main_tittle">
+      найкращі мультфільми в новому форматі
+    </h1>
+    <div class="wrapper_slider">
+      <div class="slider">
+          <div class="slider_item">
+            <img class="slider_img" src="img/aladin.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Алладін</h2>
+               <p class="slider_content__main">
+                 Головний герой цього чудового мультсеріалу - добрий і сміливий юнак Аладдін.
+                 Раніше йому доводилося красти у багатіїв, щоб вижити, а зараз він - наречений
+                 найкрасивішої дівчини арабських пустель - принцеси Жасмін. Разом зі своїми вірними
+                 друзями - мавпою Абу, папугою Яго і Джином...
+               </p>
+               <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+            
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/cats.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Коти-аристократи</h2>
+               <p class="slider_content__main">
+                 Багата літня дама вирішує залишити свої статки улюбленій кішці Герцогині і трьом її кошенятам: Тулузу, Марі і Берліозу. Однак дворецький Едгар не бажає миритися з цим. Він викрадає котів і відвозить якнайдалі від дому, кидаючи їх напризволяще. На наступний день Герцогиня...
+               </p>
+               <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/girl.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Красуня і чудовисько</h2>
+               <p class="slider_content__main">
+                 «Красуня і чудовисько» - це дуже красива і казкова історія, виконана в найкращих традиціях диснеївської студії. Історія кохання, пронизана ніжністю, неймовірними пригодами та іскрометним гумором.               </p>
+               <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/lion.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Король Лев</h2>
+               <p class="slider_content__main">
+                 У лева на ім'я Муфаса, короля неосяжної савани, з левицею Сарабі,
+                 люблячої його дружиною, з'являється на світ левеня - спадкоємець титулу
+                 батька, якому дають ім'я - Сімба. У короля Муфаси є брат на ім'я Шрам,
+                 який упевнений, що трон неодмінно повинен стати його...
+               </p>
+                 <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/dalmatians.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">101 Далматинець</h2>
+               <p class="slider_content__main">
+                 Зажерлива модниця Круелла задумала зшити собі плямистий хутряний наряд зі шкурок бідних цуценят. Проте тварини, об'єднавшись, мають намір провчити її. Зворушлива і неймовірно цікава історія пошуку і порятунку щенят далматинських догів, які були викрадені у своїх господарів...
+               </p>
+              <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/turn.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Черепашки ніндзя</h2>
+               <p class="slider_content__main">
+                 Брати черепашки вперше вибралися з Нью-Йоркського колектора і моментально потрапляють у халепу. Їм довелося рятувати дівчинку Ейпріл О’Ніл і її батька Кербі від бандитів...
+               </p>
+              <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+          <div class="slider_item">
+            <img class="slider_img" src="img/vini.jpg">
+            <div class="slider_content">
+               <h2 class="slider_content__tittle">Пригоди Вінні Пухая</h2>
+               <p class="slider_content__main">
+                 Сюжет мультфільму «Пригоди Вінні Пуха» оповідає про пригоди знаменитого жовтого ведмедя і його друзів у чарівному лісі. Всі вони дуже добрі, постійно потрапляють в різні кумедні ситуації і вміло звідти вибираються ...               </p>
+              <a class="slider_content__button" href="/">
+                 Купити білет
+               </a>
+            </div>
+
+
+          </div>
+
+      </div>
+    </div>
+
+<h2 class="main_tittle">
+  Грай та вигравай багато крутих подарунків!!!
+</h2>
+    <div class="wrapper_interactive__block">
+      <div id="interactive_block_1" class="interactive_block">
+      </div>
+      <div id="interactive_block_2" class="interactive_block">
+      </div>
+      <div id="interactive_block_3" class="interactive_block">
+      </div>
+      <div id="interactive_block_4" class="interactive_block">
+      </div>
+      <div id="interactive_block_5" class="interactive_block">
+      </div>
+    </div>
+    <div class="wrapper_button">
+      <button type="submit" class="button_submit">Submit</button>
+      <button type="submit" class="button_refresh invisible">Грати ще!</button>
+
+    </div>
+  </div>
+
+</main>
+
+
+<footer class="wrapper_footer">
+  <div class="wrapper ">
+    <div class="footer">
+      <div>
+        <ul class="footer_menu">
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+
+        </ul>
+      </div>
+      <div>
+        <ul class="footer_menu">
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+
+        </ul>
+      </div>
+      <div>
+        <ul class="footer_menu">
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+          <li><a href="/">Lorem ipsum dolor.</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="footer_line"></div>
+    </div>
+
+    <div class="footer footer_block__logo">
+      <a href="/">
+        <img class="logo" src="./img/facebook.png">
+      </a>
+      <a href="/">
+        <img class="logo" src="./img/instagram.png">
+      </a>
+      <a href="/">
+        <img class="logo" src="./img/telegram.png">
+      </a>
+    </div>
+
+
+  </div>
+</footer>
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="card.js"></script>
+
+<script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+class Card {
+
+    constructor(options) {
+        this.container = options.container;
+        this.itemCount = options.itemCount;
+        this.items = new Array(this.itemCount);
+
+    }
+
+    build() {
+
+        for (let i = 0; i < this.itemCount; i++) {
+            const item = document.createElement('div');
+            item.className = 'interactive_item';
+            item.id = this.container.id + (i + 1);
+            item.dataset.index = i;
+            item.onclick = this.itemClick.bind(this);
+            item.innerHTML = `<p>${i + 1}</p>`;
+            this.container.appendChild(item);
+
+
+        }
+    }
+
+    rebuild() {
+        this.items = this.items.map(x => 0);
+        this.container.innerHTML = '';
+
+        this.build();
+    }
+
+    itemClick(event) {
+        const itemChecked = this.items[event.currentTarget.dataset.index] === 1;
+
+        if (!itemChecked && this.checkedCount > 4) {
+            this.container.classList.add('invalid');
+            //return;
+        } else {
+            this.container.classList.remove('invalid');
+        }
+
+
+        this.toggleCheck(event.currentTarget);
+
+        console.log(this.items)
+    }
+
+    toggleCheck(itemDiv) {
+        const itemChecked = this.items[itemDiv.dataset.index] === 1;
+
+        itemDiv.classList.toggle('check');
+
+        if (itemChecked) {
+            this.items[itemDiv.dataset.index] = 0
+        }
+        else {
+            this.items[itemDiv.dataset.index] = 1
+        }
+    }
+
+    validateNumbers(numbers) {
+        let score = 0;
+        const checkedIndexes = this.items.map((x, index) => {
+            return x === 1
+                ? index
+                : -1;
+        }).filter(x => x > -1);
+
+        for (let i = 0; i < checkedIndexes.length; i++) {
+            const checkedIndex = checkedIndexes[i];
+            const isCorrect = numbers.findIndex(n => n === checkedIndex) > -1;
+
+            const itemDiv = this.container.querySelector(`#${this.container.id}${checkedIndex+1}`)
+
+            if (isCorrect) {
+                itemDiv.classList.add('true');
+                score++;
+            } else {
+                itemDiv.classList.add('false')
+            }
+        }
+
+        return score;
+    }
+
+    get isValid() {
+        return this.checkedCount <= 5;
+    }
+
+    get checkedCount() {
+        return this.items.reduce((acum, cur) => {
+            return isNaN(cur) ? acum : acum + cur;
+        }, 0)
+    }
+}
